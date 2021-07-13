@@ -8,6 +8,15 @@ using System.Text.RegularExpressions;
 
 namespace AddCopyButtons
 {
+    /// <summary>
+    /// This little utility helps me as a creator of documentation for software developers.
+    /// I use the product Typora to create .md files, many of which include Code blocks.
+    /// I don't want my end-users to have to install Typora to read them, so I export them
+    /// to HTML files. However, in order to copy a code block to the clipboard (to paste
+    /// into their applications) they have to select the entire block and press Ctrl-C.
+    /// Sometimes they can miss a character. So, this utility takes the HTML file 
+    /// exported by Typora and adds a "Copy" button into each code block to make that easier.
+    /// </summary>
     class Program
     {
         static void Main(string[] args)
