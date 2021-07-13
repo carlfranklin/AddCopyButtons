@@ -81,8 +81,7 @@ namespace AddCopyButtons
                         Encoding.GetEncoding(
                             Encoding.ASCII.EncodingName,
                             new EncoderReplacementFallback(string.Empty),
-                            new DecoderExceptionFallback()
-                            ),
+                            new DecoderExceptionFallback()),
                     Encoding.UTF8.GetBytes(InputString)));
         }
     }
